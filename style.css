@@ -62,7 +62,6 @@ button::-moz-focus-inner {
 a,
 a:visited {
   text-decoration: none;
-  color: ;
 }
 
 a:hover {
@@ -175,6 +174,8 @@ body {
 .container {
   max-width: 580px;
   margin: 0 auto;
+  padding: 0 15px; /* отступы безопасности*/
+  background-color: white;
 }
 
 /* ------------------------HEADER------------------------ */
@@ -188,6 +189,7 @@ body {
 
 .header__container {
   display: flex;
+  flex-wrap: wrap;
   min-height: 57px; /*высота шапки */
   align-items: center; /*объекты расположены по центру высоты; */
 }
@@ -198,7 +200,7 @@ body {
 
 .menu {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .menu__list {
@@ -213,8 +215,86 @@ body {
 }
 
 .menu__link {
-  font-family: "IBM Plex Sans";
   text-transform: uppercase;
   font-weight: 700;
-  line-height: 1.5;
+  line-height: 15.6px;
 }
+
+/* ------------------------MAIN------------------------ */
+
+.profile {
+  position: relative;
+  width: 100%;
+}
+
+.profile__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile__information {
+  margin-top: 60px;
+}
+
+.information__name {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: 2px;
+}
+
+.information__job-title {
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 2.1px;
+  background: linear-gradient(135deg, #FF26B2 0%, #851BD9 64.06%, #3F0FFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.information__photo {
+  margin-top: 10px;
+  margin-left: 40px;
+}
+
+.information__img {
+  Width: 170px;
+  Height: 170px;
+  border-radius: 70px;
+}
+
+.information__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 10px;
+}
+
+.information__contacts {
+  line-height: 30px;
+}
+
+.information__links {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-around;
+  background: linear-gradient(135deg, #FF26B2 0%, #851BD9 64.06%, #3F0FFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.information__github:hover {
+  background: #3f0fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.information__linkedin:hover {
+  background: #3f0fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
