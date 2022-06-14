@@ -321,6 +321,16 @@ body {
   align-items: center;
 }
 
+.about-me__title {
+  margin-top: 15px;
+  text-decoration: underline;
+  text-decoration-color: #af48ff;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+
 .about-me__text-block {
   margin: 15px 25px 15px 25px;
   line-height: 20px;
