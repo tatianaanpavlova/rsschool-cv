@@ -1,0 +1,575 @@
+/* ------------------------RESET------------------------ */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/* ------------------------FONTS------------------------ */
+
+/* ibm-plex-sans-300 - latin */
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: url("./assets/fonts/ibm-plex-sans-v14-latin-300.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("./assets/fonts/ibm-plex-sans-v14-latin-300.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("./assets/fonts/ibm-plex-sans-v14-latin-300.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("./assets/fonts/ibm-plex-sans-v14-latin-300.woff") format("woff"),
+    /* Modern Browsers */ url("./assets/fonts/ibm-plex-sans-v14-latin-300.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("./assets/fonts/ibm-plex-sans-v14-latin-300.svg#IBMPlexSans")
+      format("svg"); /* Legacy iOS */
+}
+/* ibm-plex-sans-regular - latin */
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/ibm-plex-sans-v14-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("./assets/fonts/ibm-plex-sans-v14-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("./assets/fonts/ibm-plex-sans-v14-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("./assets/fonts/ibm-plex-sans-v14-latin-regular.woff") format("woff"),
+    /* Modern Browsers */
+      url("./assets/fonts/ibm-plex-sans-v14-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("./assets/fonts/ibm-plex-sans-v14-latin-regular.svg#IBMPlexSans")
+      format("svg"); /* Legacy iOS */
+}
+/* ibm-plex-sans-700 - latin */
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./assets/fonts/ibm-plex-sans-v14-latin-700.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("./assets/fonts/ibm-plex-sans-v14-latin-700.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("./assets/fonts/ibm-plex-sans-v14-latin-700.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("./assets/fonts/ibm-plex-sans-v14-latin-700.woff") format("woff"),
+    /* Modern Browsers */ url("./assets/fonts/ibm-plex-sans-v14-latin-700.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("./assets/fonts/ibm-plex-sans-v14-latin-700.svg#IBMPlexSans")
+      format("svg"); /* Legacy iOS */
+}
+
+/* ------------------------BODY------------------------ */
+html,
+body {
+  height: 100%;
+  line-height: 1;
+}
+
+body {
+  font-family: "IBM Plex Sans", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #222222;
+  background: #e5e5e5;
+}
+
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+.container {
+  max-width: 580px;
+  margin: 0 auto;
+  padding: 0 15px; /* отступы безопасности*/
+  background-color: white;
+}
+
+/* ------------------------HEADER------------------------ */
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+
+.header__container {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 57px; /*высота шапки */
+  align-items: center; /*объекты расположены по центру высоты; */
+}
+
+.header__menu {
+  flex: 1 1 auto; /*будет расширяться */
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+}
+
+.menu__list {
+  display: flex;
+  background: linear-gradient(135deg, #ff26b2 0%, #851bd9 64.06%, #3f0fff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu__item {
+  margin: 0px 20px 0px 0px;
+}
+
+.menu__link {
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 15.6px;
+  letter-spacing: 1px;
+}
+
+.menu__link:hover {
+  background: #222222;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ------------------------MAIN------------------------ */
+
+.profile {
+  position: relative;
+  width: 100%;
+}
+
+.profile__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile__information {
+  margin-top: 60px;
+}
+
+.information__name {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: 2px;
+}
+
+.information__job-title {
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 2.1px;
+  background: linear-gradient(135deg, #ff26b2 0%, #851bd9 64.06%, #3f0fff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.information__photo {
+  margin-top: 10px;
+  margin-left: 40px;
+}
+
+.information__img {
+  width: 170px;
+  height: 170px;
+  border-radius: 70px;
+}
+
+.profile__contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.contacts__list {
+  line-height: 30px;
+  letter-spacing: 0.5px;
+}
+
+.contacts__links {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-around;
+  background: #af48ff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.contacts__github:hover {
+  background: #3f0fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contacts__linkedin:hover {
+  background: #3f0fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.information__about-me {
+  line-height: 20px;
+  letter-spacing: 0.1;
+}
+
+.about-me {
+  position: relative;
+  width: 100%;
+}
+
+.about-me__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me__title {
+  margin-top: 15px;
+  text-decoration: underline;
+  text-decoration-color: #af48ff;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+
+.about-me__text-block {
+  margin: 15px 25px 15px 25px;
+  line-height: 20px;
+  text-align: justify;
+}
+
+.expirience {
+  position: relative;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.expirience__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.expirience__title {
+  margin-top: 15px;
+  text-decoration: underline;
+  text-decoration-color: #af48ff;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+
+.expirience__job {
+  margin-top: 10px;
+  letter-spacing: 0.5px;
+}
+
+.job__data {
+  font-size: 15px;
+  color: #999999;
+}
+
+.job__job-position {
+  line-height: 20px;
+  padding-top: 5px;
+  text-align: justify;
+  letter-spacing: 0.5px;
+}
+
+.job__place {
+  font-weight: 700;
+}
+
+.job__list {
+  text-align: justify;
+  line-height: 20px;
+  margin-bottom: 15px;
+}
+
+.job__list-item {
+  list-style-type: disc;
+  margin: 5px 75px 0px 75px;
+}
+
+.job__list-item::marker {
+  color: #af48ff;
+}
+
+.skills {
+  position: relative;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.skills__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills__title {
+  margin-top: 15px;
+  text-decoration: underline;
+  text-decoration-color: #af48ff;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+
+.skills__list {
+  text-align: justify;
+  line-height: 20px;
+  margin-bottom: 15px;
+  padding-top: 5px;
+}
+
+.skills__list-item {
+  list-style-type: disc;
+  margin: 5px 75px 0px 75px;
+}
+
+.skills__list-item::marker {
+  color: #af48ff;
+}
+
+.code-example {
+  position: relative;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.code-example__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.code-example__title {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-decoration: underline;
+  text-decoration-color: #af48ff;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  padding-bottom: 5px;
+}
+
+.code-example__code {
+  text-align: justify;
+  line-height: 20px;
+}
+
+.code-example__language-javascript {
+  margin: 5px 35px 0px 35px;
+}
+
+.education {
+  position: relative;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.education__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 15px;
+}
+
+.education__title {
+  margin-top: 15px;
+  text-decoration: underline;
+  text-decoration-color: #af48ff;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  padding-bottom: 5px;
+}
+
+.education__subtitle {
+  margin-top: 15px;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  padding-bottom: 5px;
+  background: linear-gradient(135deg, #ff26b2 0%, #851bd9 64.06%, #3f0fff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.education__data {
+  font-size: 15px;
+  color: #999999;
+}
+
+.education__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+  line-height: 20px;
+  text-align: justify;
+}
+
+.education__place {
+  font-weight: 700;
+}
+
+.education__lang-list {
+  line-height: 20px;
+  margin-bottom: 15px;
+  padding-top: 5px;
+}
+
+.education__lang-list-item {
+  list-style-type: disc;
+  margin: 5px 75px 0px 75px;
+  text-align: justify;
+}
+
+.education__lang-list-item::marker {
+  color: #af48ff;
+}
+
+/* ------------------------FOOTER------------------------ */
+
+footer {
+  width: 100%;
+  min-height: 100px;
+  margin-top: 15px;
+}
+
+.footer__container {
+  min-height: 80px;
+  background: linear-gradient(135deg, #ff26b2 0%, #851bd9 64.06%, #3f0fff 100%);
+}
+
+.footer__items {
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__copiright {
+  font-weight: 700;
+}
+
+.footer__github-link {
+  color: #222222;
+}
+
+.footer__rsschool {
+  width: 80;
+  height: 29;
+}
