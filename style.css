@@ -322,10 +322,9 @@ body {
 }
 
 .about-me__text-block {
-  line-height: 25px;
   margin: 15px 25px 15px 25px;
+  line-height: 20px;
   text-align: justify;
-  letter-spacing: 0.5px;
 }
 
 .expirience {
@@ -343,45 +342,47 @@ body {
 
 .expirience__title {
   margin-top: 15px;
+  text-decoration: underline;
+  text-decoration-color: #AF48FF;
   font-weight: 700;
   font-size: 20px;
   line-height: 20px;
   letter-spacing: 1px;
 }
 
-.expirience__EVS {
+.expirience__job {
   margin-top: 10px;
   letter-spacing: 0.5px;
 }
 
-.EVS__data {
+.job__data {
   font-size: 15px;
   color: #999999;
 }
 
-.EVS__job-title {
+.job__job-position {
   line-height: 20px;
   padding-top: 5px;
   text-align: justify;
   letter-spacing: 0.5px;
 }
 
-.EVS__title {
+.job__place {
   font-weight: 700;
 }
 
-.EVS__list {
+.job__list {
   text-align: justify;
   line-height: 20px;
   margin-bottom: 15px;
 }
 
-.EVS__list-item {
+.job__list-item {
   list-style-type: disc;
   margin: 5px 75px 0px 75px;
 }
 
-.EVS__list-item::marker {
+.job__list-item::marker {
   color: #AF48FF;
 }
 
@@ -400,6 +401,8 @@ body {
 
 .skills__title {
   margin-top: 15px;
+  text-decoration: underline;
+  text-decoration-color: #AF48FF;
   font-weight: 700;
   font-size: 20px;
   line-height: 20px;
@@ -421,3 +424,112 @@ body {
 .skills__list-item::marker {
   color: #AF48FF;
 }
+
+.code-example {
+  position: relative;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.code-example__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.code-example__title {
+  margin-top: 15px;
+  text-decoration: underline;
+  text-decoration-color: #AF48FF;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  padding-bottom: 5px;
+}
+
+.code-example__code {
+  text-align: justify;
+  line-height: 20px;
+  margin-bottom: 15px;
+}
+
+.code-example__language-javascript {
+  margin: 5px 35px 0px 35px;
+}
+
+.education {
+  position: relative;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.education__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 15px;
+}
+
+.education__title {
+  margin-top: 15px;
+  text-decoration: underline;
+  text-decoration-color: #AF48FF;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  padding-bottom: 5px;
+}
+
+.education__subtitle {
+  margin-top: 15px;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  padding-bottom: 5px;
+  background: linear-gradient(135deg, #ff26b2 0%, #851bd9 64.06%, #3f0fff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.education__data {
+  font-size: 15px;
+  color: #999999;
+}
+
+.education__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+  line-height: 20px;
+  text-align: justify;
+}
+
+.education__place {
+  font-weight: 700;
+}
+
+.education__lang-list {
+  line-height: 20px;
+  margin-bottom: 15px;
+  padding-top: 5px;
+}
+
+.education__lang-list-item {
+  list-style-type: disc;
+  margin: 5px 75px 0px 75px;
+  text-align: justify;
+}
+
+.education__lang-list-item::marker {
+  color: #AF48FF;
+}
+
+/* ------------------------FOOTER------------------------ */
+
