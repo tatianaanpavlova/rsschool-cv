@@ -285,10 +285,10 @@ body {
 }
 
 .contacts__links {
+  margin-top: 5px;
   display: flex;
-  /* flex-direction: column; */
   justify-content: space-around;
-  background: #ff26b2;
+  background: #af48ff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -343,7 +343,7 @@ body {
 .expirience__title {
   margin-top: 15px;
   text-decoration: underline;
-  text-decoration-color: #AF48FF;
+  text-decoration-color: #af48ff;
   font-weight: 700;
   font-size: 20px;
   line-height: 20px;
@@ -383,7 +383,7 @@ body {
 }
 
 .job__list-item::marker {
-  color: #AF48FF;
+  color: #af48ff;
 }
 
 .skills {
@@ -402,7 +402,7 @@ body {
 .skills__title {
   margin-top: 15px;
   text-decoration: underline;
-  text-decoration-color: #AF48FF;
+  text-decoration-color: #af48ff;
   font-weight: 700;
   font-size: 20px;
   line-height: 20px;
@@ -422,7 +422,7 @@ body {
 }
 
 .skills__list-item::marker {
-  color: #AF48FF;
+  color: #af48ff;
 }
 
 .code-example {
@@ -440,8 +440,9 @@ body {
 
 .code-example__title {
   margin-top: 15px;
+  margin-bottom: 15px;
   text-decoration: underline;
-  text-decoration-color: #AF48FF;
+  text-decoration-color: #af48ff;
   font-weight: 700;
   font-size: 20px;
   line-height: 20px;
@@ -452,7 +453,6 @@ body {
 .code-example__code {
   text-align: justify;
   line-height: 20px;
-  margin-bottom: 15px;
 }
 
 .code-example__language-javascript {
@@ -476,7 +476,7 @@ body {
 .education__title {
   margin-top: 15px;
   text-decoration: underline;
-  text-decoration-color: #AF48FF;
+  text-decoration-color: #af48ff;
   font-weight: 700;
   font-size: 20px;
   line-height: 20px;
@@ -528,8 +528,38 @@ body {
 }
 
 .education__lang-list-item::marker {
-  color: #AF48FF;
+  color: #af48ff;
 }
 
 /* ------------------------FOOTER------------------------ */
 
+footer {
+  width: 100%;
+  min-height: 100px;
+  margin-top: 15px;
+}
+
+.footer__container {
+  min-height: 80px;
+  background: linear-gradient(135deg, #ff26b2 0%, #851bd9 64.06%, #3f0fff 100%);
+}
+
+.footer__items {
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__copiright {
+  font-weight: 700;
+}
+
+.footer__github-link {
+  color: #222222;
+}
+
+.footer__rsschool {
+  width: 80;
+  height: 29;
+}
