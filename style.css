@@ -218,6 +218,13 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   line-height: 15.6px;
+  letter-spacing: 1px;
+}
+
+.menu__link:hover {
+  background: #222222;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* ------------------------MAIN------------------------ */
@@ -249,7 +256,7 @@ body {
   font-weight: 700;
   line-height: 20px;
   letter-spacing: 2.1px;
-  background: linear-gradient(135deg, #FF26B2 0%, #851BD9 64.06%, #3F0FFF 100%);
+  background: linear-gradient(135deg, #ff26b2 0%, #851bd9 64.06%, #3f0fff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -260,41 +267,157 @@ body {
 }
 
 .information__img {
-  Width: 170px;
-  Height: 170px;
+  width: 170px;
+  height: 170px;
   border-radius: 70px;
 }
 
-.information__content {
+.profile__contacts {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: baseline;
+  justify-content: center;
   margin-top: 10px;
 }
 
-.information__contacts {
+.contacts__list {
   line-height: 30px;
+  letter-spacing: 0.5px;
 }
 
-.information__links {
+.contacts__links {
   display: flex;
   /* flex-direction: column; */
   justify-content: space-around;
-  background: linear-gradient(135deg, #FF26B2 0%, #851BD9 64.06%, #3F0FFF 100%);
+  background: #ff26b2;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.information__github:hover {
+.contacts__github:hover {
   background: #3f0fff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.information__linkedin:hover {
+.contacts__linkedin:hover {
   background: #3f0fff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+.information__about-me {
+  line-height: 20px;
+  letter-spacing: 0.1;
+}
 
+.about-me {
+  position: relative;
+  width: 100%;
+}
+
+.about-me__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me__text-block {
+  line-height: 25px;
+  margin: 15px 25px 15px 25px;
+  text-align: justify;
+  letter-spacing: 0.5px;
+}
+
+.expirience {
+  position: relative;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.expirience__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.expirience__title {
+  margin-top: 15px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+
+.expirience__EVS {
+  margin-top: 10px;
+  letter-spacing: 0.5px;
+}
+
+.EVS__data {
+  font-size: 15px;
+  color: #999999;
+}
+
+.EVS__job-title {
+  line-height: 20px;
+  padding-top: 5px;
+  text-align: justify;
+  letter-spacing: 0.5px;
+}
+
+.EVS__title {
+  font-weight: 700;
+}
+
+.EVS__list {
+  text-align: justify;
+  line-height: 20px;
+  margin-bottom: 15px;
+}
+
+.EVS__list-item {
+  list-style-type: disc;
+  margin: 5px 75px 0px 75px;
+}
+
+.EVS__list-item::marker {
+  color: #AF48FF;
+}
+
+.skills {
+  position: relative;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.skills__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills__title {
+  margin-top: 15px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+
+.skills__list {
+  text-align: justify;
+  line-height: 20px;
+  margin-bottom: 15px;
+  padding-top: 5px;
+}
+
+.skills__list-item {
+  list-style-type: disc;
+  margin: 5px 75px 0px 75px;
+}
+
+.skills__list-item::marker {
+  color: #AF48FF;
+}
