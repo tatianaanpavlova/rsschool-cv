@@ -1,95 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tatiana Pavlova | rsschool-cv</title>
-    <link href="style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="container">
-      <h1>
-        <a href="https://tatianaanpavlova.github.io/rsschool-cv/"
-          >rsschool-cv</a
-        >
-      </h1>
-
-      <h1 id="tatiana-pavlova">Tatiana Pavlova</h1>
-      <h2 id="junior-frontend-developer">Junior Frontend Developer</h2>
-      <h3 id="contact-information">Contact Information:</h3>
-      <p>
-        <strong>Phone:</strong> +7 996 923 10 49
-        <br><strong>E-mail:</strong> tatiana.an.pavlova@gmail.com
-        <br><strong>Discord:</strong> __tiana(@tatianaanpavlova)
-        <br><a href="https://www.linkedin.com/in/tatiana-an-pavlova/"
-          ><strong>LinkedIn</strong></a
-        >
-      </p>
-      <h3 id="about-myself">About Myself:</h3>
-      <p>
-        My passion for programming started from a little curiosity and from an
-        idea to challenge myself. Eventually, I realized that I enjoy coding and
-        want to make it my new profession. My love for self-education and my
-        ability to learn fast give me hope that I can become a good web
-        developer.
-      </p>
-      <h3 id="skills">SKills:</h3>
-      <ul>
-        <li>HTML/CSS</li>
-        <li>Basic JavaScript</li>
-        <li>
-          Git, GitHub
-          <h3 id="code-example">Code Example:</h3>
-          <pre><code class="language-javaskript">function multiply(a, b){
-  a * b
-  return a*b;
-  }
-  </code></pre>
-          <h3 id="work-experience">Work experience:</h3>
-          <p>
-            <strong>LLC “Engineering ventilation systems”, Tver</strong>
-            <br>December 2018 — June 2021
-            <br>Assistant Manager
-          </p>
-        </li>
-        <li>
-          Registration of incoming and outgoing documents in the ERP system C1
-        </li>
-        <li>Drafting of executive documentation</li>
-        <li>Business correspondence with partners and clients</li>
-        <li>Receiving calls and incoming correspondence</li>
-        <li>
-          Ensuring the functioning of the company’s office
-          <h3 id="education">Education:</h3>
-        </li>
-        <li>
-          <strong>Peoples’ Friendship University of Russia, Moscow</strong>
-          <ul>
-            <li>
-              Master’s degree, Creative Industries and Management in the Field
-              of Culture
-              <br>September 2016 - June 2018
-            </li>
-          </ul>
-        </li>
-        <li>
-          <strong>Peoples’ Friendship University of Russia, Moscow</strong>
-          <ul>
-            <li>Bachelor’s degree, Finance</li>
-            <li>
-              Foreign Language of Professional Communication and Specialised
-              Translation (English)
-              <br>September 2012 - June 2016
-              <h3 id="languages">Languages</h3>
-            </li>
-          </ul>
-        </li>
-        <li>Russian - Native</li>
-        <li>English - B2/C1</li>
-      </ul>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container container">
+          <nav class="header__menu menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#work-experience" class="menu__link"
+                  >Work Experience</a
+                >
+              </li>
+              <li class="menu__item">
+                <a href="#skills" class="menu__link">Skills</a>
+              </li>
+              <li class="menu__item">
+                <a href="#code-example" class="menu__link">Code Example</a>
+              </li>
+              <li class="menu__item">
+                <a href="#education" class="menu__link">Education</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="main">
+        <section class="profile">
+          <div class="profile__container container">
+            <div class="profile__information information">
+              <h1 class="information__name">Tatiana Pavlova</h1>
+              <h2 class="information__job-title">Junior Frontend Developer</h2>
+              <div class="information__photo">
+                <img
+                  src="./assets/img/profile-picture.jpg"
+                  alt="Profile Picture"
+                  class="information__img"
+                />
+              </div>
+            </div>
+            <div class="profile__contacts contacts">
+              <ul class="contacts__list">
+                <li>
+                  <img src="./assets/svg/discord.svg" alt="discord icon" />
+                  __tiana(@tatianaanpavlova)
+                </li>
+                <li>
+                  <img src="./assets/svg/mail.svg" alt="email icon" />
+                  tatiana.an.pavlova@gmail.com
+                </li>
+                <li class="contacts__links">
+                  <a
+                    href="https://github.com/tatianaanpavlova"
+                    class="contacts__github"
+                    ><img src="./assets/svg/github_purple.svg" alt="github icon">
+                    GitHub</a
+                  >
+                  <a
+                    href="https://www.linkedin.com/in/tatiana-an-pavlova/"
+                    class="contacts__linkedin"
+                    ><img src="./assets/svg/linkedin.svg" alt="linkedin icon"> 
+                    LinkedIn</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="about-me">
+          <div class="about-me__container container">
+            <h2 class="about-me__title">Hi, I'm Tatiana :)</h2>
+            <p class="about-me__text-block">
+              My passion for programming started from a little curiosity and
+              from an idea to challenge myself. Eventually, I realized that I
+              enjoy coding and want to make it my new profession. My love for
+              self-education and my ability to learn fast give me hope that I
+              can become a good web developer.
+            </p>
+          </div>
+        </section>
+        <section class="expirience">
+          <div class="expirience__container container">
+            <h2 class="expirience__title" id="work-experience">
+              Work Experience
+            </h2>
+            <div class="expirience__job job"></div>
+            <div class="job__data">December 2018 — June 2021</div>
+            <div class="job__job-position">
+              Assistant Manager,
+              <span class="job__place"
+                >LLC “Engineering ventilation systems”, Tver</span>
+            </div>
+            <ul class="job__list">
+              <li class="job__list-item">
+                Registration of incoming and outgoing documents in the ERP
+                system C1
+              </li>
+              <li class="job__list-item">
+                Drafting of executive documentation
+              </li>
+              <li class="job__list-item">
+                Business correspondence with partners and clients
+              </li>
+              <li class="job__list-item">
+                Receiving calls and incoming correspondence
+              </li>
+              <li class="job__list-item">
+                Ensuring the functioning of the company’s office
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="skills">
+          <div class="skills__container container">
+            <h2 class="skills__title" id="skills">Skills</h2>
+            <ul class="skills__list">
+              <li class="skills__list-item">HTML/CSS</li>
+              <li class="skills__list-item">JavaScript</li>
+              <li class="skills__list-item">SQL/ABAP</li>
+              <li class="skills__list-item">Git/GitHub</li>
+            </ul>
+          </div>
+        </section>
+        <section class="code-example">
+          <div class="code-example__container container">
+            <h2 class="code-example__title" id="code-example">Code Example</h2>
+            <pre
+              class="code-example__code"
+            ><code class="code-example__language-javascript">function multiply(a, b){
+              a * b
+              return a*b;
+              }
+              </code></pre>
+          </div>
+        </section>
+        <section class="education">
+          <div class="education__container container">
+            <h2 class="education__title" id="education">Education</h2>
+            <h3 class="education__subtitle">Courses</h3>
+            <span class="education__data">June 2022 - Currently</span>
+            <div class="education__item">
+              <span class="education__place">RS Schools</span>
+              <span class="education__level">«JavaScript/Front-end. Stage 0»</span>
+            </div>
+            <h3 class="education__subtitle">Master’s degree</h3>
+            <span class="education__data">September 2016 - June 2018</span>
+            <div class="education__item">
+              <span class="education__place"
+                >Peoples’ Friendship University of Russia, Moscow</span>
+              <span class="education__level"
+                >Creative Industries and Management in the Field of
+                Culture</span>
+            </div>
+            <h3 class="education__subtitle">Bachelor’s degree</h3>
+            <span class="education__data">September 2012 - June 2016</span>
+            <div class="education__item">
+              <span class="education__place"
+                >Peoples’ Friendship University of Russia, Moscow</span>
+              <span class="education__level"
+                >Economics and Finance</span>
+              <h3 class="education__subtitle">Languages</h3>
+              <ul class="education__lang-list">
+                <li class="education__lang-list-item">Russian - Native</li>
+                <li class="education__lang-list-item">English - B2</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__container container">
+          <div class="footer__items">
+            <p class="footer__copiright">© 2022 by <a href="https://github.com/tatianaanpavlova" class="footer__github-link"> <img src="./assets/svg/github_black.svg" alt="github icon">Tatiana Pavlova</a></p>
+            <div class="footer__rsschool"><a href="https://rs.school/js/"><img class="footer__rsschool-logo" src="./assets/svg/rs_school.svg" alt="RS School logo"></a></div>
+          </div>
+        </div>
+      </footer>
     </div>
-    <script>
-    </script>
   </body>
 </html>
